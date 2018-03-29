@@ -1,0 +1,86 @@
+.select-menu{
+  background-color: white;
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.25);
+  color: #333333;
+  min-height: 25px;
+  min-width: 50px;
+  cursor: default;
+  font-family: serif;
+  font-size: 14px;
+  border-radius: 12.5px;
+}
+
+.select-menu.open{
+  border-radius: 5px;
+}
+
+.option{
+  display:none;
+  height: 0;
+  line-height: 0;
+  opacity:0;
+}
+
+.select-menu.open .option{
+  display: block;
+}
+
+.option.selected{
+  display:block;
+  height: 25px;
+  line-height: 25px;
+  opacity:1;
+}
+
+.option:hover{
+  box-shadow: inset 0px 0px 4px rgb(173,102,102);
+}
+
+.option.selected{
+  border-radius: 12.5px;
+}
+
+.select-menu.open .option{
+  border-radius: 0px;
+}
+
+.select-menu.open .option:first-child{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.select-menu.open .option:last-child{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.label{
+  float:left;
+  padding-left:15px;
+}
+
+.placeholder .label{
+  font-style: italic;
+}
+
+.icon-container{
+  float: right;
+  width: 14px;
+  padding-left: 5px;
+  padding-right: 10px;
+  border-left: 1px solid #d0d0d0;
+  text-align: center;
+}
+
+.select-menu .selected .icon-container:before{
+  content: "▾";
+}
+
+.select-menu.open .selected .icon-container:before{
+  content: "✓";
+}
+
+.select-menu.open .icon-container{
+  border: 0;
+  width: 15px;
+}

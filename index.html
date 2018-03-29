@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="select_menu/public/select_menu_default.css">
+    <link rel="stylesheet" href="demo_app/stylesheets/index.css">
+  </head>
+
+  <body>
+    <main>
+      <div id="title">Select Menu Demo</div>
+      <div class="column1">
+        <div id="select-menu-1"></div>
+      </div>
+      <div class="column2">
+        <div>
+          Current Selected Option:
+          <div id="option-name"></div>
+        </div>
+
+      </div>
+      <div id="button-list">
+        <button id="enable">Enable Menu</button>
+        <button id="disable">Disable Menu</button>
+        <button id="open">Open Menu</button>
+        <button id="close">Close Menu</button>
+        <button id="enable-animations">Enable Animations</button>
+        <button id="disable-animations">Disable Animations</button>
+      </div>
+    </main>
+
+    <script src="lib/Animation.js" type="module"></script>
+    <script src="lib/EventDispatcher.js" type="module"></script>
+    <script src="select_menu/private/Controller.js" type="module"></script>
+    <script src="select_menu/private/States.js" type="module">></script>
+    <script src="select_menu/private/Options.js" type="module">></script>
+    <script src="select_menu/private/Display.js" type="module"></script>
+    <script src="select_menu/private/UserEvents.js" type="module"></script>
+    <script src="select_menu/public/SelectMenu.js" type="module"></script>
+    <script src="demo_app/scripts/App.js" type="module"></script>
+
+  </body>
+</html>
